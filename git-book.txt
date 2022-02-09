@@ -18,8 +18,8 @@ git commit -m "删除a目录下的2.txt文件"
 git push
 ------------------------------------------------------------------
 
-ssh-keygen -t rsa -C "1764830893@qq.com"
-ssh -T git@github.com
+ssh-keygen -t rsa -C "1764830893@qq.com"  //后一直回车
+ssh -T git@github.com  //输入y
 git config --global user.email "1764830893@qq.com"
 git config --global user.name "WUDANRU"
 git init
