@@ -1,0 +1,67 @@
+右键git bash here
+git clone https://github.com/WUDANRU/blog-1-promise-test.git
+cd  blog-1-promise-test
+dir
+git init
+git add .
+git commit -m 'hello'
+git push origin main
+
+git rm -r --cached abc.txt
+git push origin main
+------------------------------------------------------------------
+
+右键选中文件夹，然后git bash here
+
+git rm -r --cached a/2.txt //删除a目录下的2.txt文件   删除a目录git rm -r --cached a
+git commit -m "删除a目录下的2.txt文件" 
+git push
+------------------------------------------------------------------
+
+ssh-keygen -t rsa -C "1764830893@qq.com"
+ssh -T git@github.com
+git config --global user.email "1764830893@qq.com"
+git config --global user.name "WUDANRU"
+git init
+git add .   //这句如果报错，执行下面三句
+git rm -r --cached .
+git config core.autocrlf false
+git add .
+或者
+git config --global core.autocrlf false
+git add .
+--------------------------------------------------
+git commit -m "vue慕淘商城"
+git branch -M main //这句存在下面的git push -u origin main才不会报错
+git remote add origin git@github.com:WUDANRU/vue-mutaoMall.git //origin后是慕淘商城的ssh仓库地址
+git push -u origin main
+
+
+报错：
+$ git push -u origin main
+fatal: unable to access 'https://github.com/WUDANRU/other-test.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+解决方案：
+git config --global http.sslVerify "false"
+git push或git push --set-upstream origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
